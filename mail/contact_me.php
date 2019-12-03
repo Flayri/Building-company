@@ -1,17 +1,17 @@
 <?php
 
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+$name = $_POST['user_name'];
+$phone = $_POST['user_phone'];
+$email = $_POST['user_email'];
+$message = $_POST['user_message'];
 
 $token = "1030375094:AAHUPOKEixoZk-cnRFAo9X8cUx-R1dbpWmk";
 $chat_id = "-358442412";
 $arr = array(
   'Имя пользователя: ' => $name,
   'Телефон: ' => $phone,
-  'Email' => $email,
-  'Message' => $message
+  'Email:' => $email,
+  'Сообщение:' => $message
 );
 
 foreach($arr as $key => $value) {
