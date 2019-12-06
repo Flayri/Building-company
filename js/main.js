@@ -53,8 +53,8 @@ $('.owl-carousel').owlCarousel({
   margin: 10,
   dots: true,
   responsive: {
-    600: {
-      items: 4
+    500: {
+      items: 
     }
   }
 });
