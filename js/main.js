@@ -54,7 +54,7 @@ $('.owl-carousel').owlCarousel({
   dots: true,
   responsive: {
     500: {
-      items: 
+      items: 2
     }
   }
 });
