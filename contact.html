@@ -8,11 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
-  <link rel="manifest" href="img/icon/site.webmanifest">
-  <link rel="shortcur icon" href="img/icon/favicon.ico">
-  
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="manifest" href="img/icon/site.webmanifest">
+    <link rel="shortcur icon" href="img/icon/favicon.ico">
+
     <title>Контакты</title>
 
     <!-- Bootstrap core CSS -->
@@ -50,36 +50,43 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contacts">Контакты</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="index.html">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="about.html">Наша истрория</a>
+                        <a class="nav-link js-scroll-trigger" href="#contacts">Контакты</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#map">Карта</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Обратная связь</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- Header -->
     <header class="masthead">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">На этой странице предоставлен полный перечень наших контактов</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contacts">Ознакомиться с контактами</a>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contacts">Ознакомиться с
+                    контактами</a>
             </div>
         </div>
     </header>
+
+    <!---->
     <section class="page-section" id="contacts">
         <div class="container">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Контакты</h2>
+            </div>
             <div class="row text-center">
                 <div class="col-md-12">
-                    <p>
-                        <h2><strong class="text-uppercase">Наименование</strong></h1> Строительное унитарное предприятие
-                            «Калинковичская ПМК №101» ОАО «Полесьестрой»
-                    </p>
+                    <p><strong class="text-uppercase">Наименование:</strong> Строительное унитарное предприятие
+                        «Калинковичская ПМК №101» ОАО «Полесьестрой»</p>
                 </div>
             </div>
             <br>
@@ -116,69 +123,97 @@
                 </div>
             </div>
             <br>
+        </div>
+    </section>
+
+    <section class="bg-light page-section" id="map">
+        <div class="container">
             <div class="row  text-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Карта</h2>
+                </div>
                 <div class="col-md-12 ">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa1a91bafaa556a695849862336f188447c9a18c6f7dfa681216d0fee6332910c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
-                </div>
-            </div><br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Свяжитесь с нами</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <form action="contact_me.php" method="POST">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="" type="text" placeholder="Ваше имя *"
-                                            name="user_name" required="required"
-                                            data-validation-required-message="Пожалуйста введите ваше имя.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" id="" type="email" placeholder="Ваш Email *"
-                                            name="user_email" required="required"
-                                            data-validation-required-message="Пожалуйста введите ваш email адрес.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" id="" type="tel" placeholder="Ваш телефон *"
-                                            name="user_phone" required="required"
-                                            data-validation-required-message="Пожалуйста введите ваш номер телефона.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="" placeholder="Сообщение *"
-                                            name="user_message" required="required"
-                                            data-validation-required-message="Пожалуйста введите ваше сообщение"></textarea>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase"
-                                        type="submit">Отправить сообщение</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa1a91bafaa556a695849862336f188447c9a18c6f7dfa681216d0fee6332910c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false">
+                    </script>
                 </div>
             </div>
-
+        </div>
+        </div><br>
     </section>
-    <footer class="footer">
+
+    <section class="page-section" id="contact">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <span class="copyright">&copy; 2019 Waves. All Rights Reserved.</span>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Свяжитесь с нами</h2>
                 </div>
-                <div class="col-md-4">
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form action="contact_me.php" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" id="" type="text" placeholder="Ваше имя *"
+                                        name="user_name" required="required"
+                                        data-validation-required-message="Пожалуйста введите ваше имя.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="" type="email" placeholder="Ваш Email *"
+                                        name="user_email" required="required"
+                                        data-validation-required-message="Пожалуйста введите ваш email адрес.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="" type="tel" placeholder="Ваш телефон *"
+                                        name="user_phone" required="required"
+                                        data-validation-required-message="Пожалуйста введите ваш номер телефона.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control " id="" placeholder="Сообщение *" name="user_message"
+                                        required="required"
+                                        data-validation-required-message="Пожалуйста введите ваше сообщение"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase"
+                                    type="submit">Отправить сообщение</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="#contacts"><i class="fa fa-angle-double-right"></i>Контакты</a></li>
+                        <li><a href="#map"><i class="fa fa-angle-double-right"></i>Карта</a></li>
+                        <li><a href="#contact"><i class="fa fa-angle-double-right"></i>Обратная связь</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Главная</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 align-items-center text-xl-center text-sm-center text-md-center">
+                    <span class="copyright">&copy; 2019 Waves. All Rights Reserved.</span>
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item">
                             <a href="#">
@@ -200,7 +235,6 @@
             </div>
         </div>
     </footer>
-
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
