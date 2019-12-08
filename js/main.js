@@ -42,9 +42,6 @@
 })(jQuery); // End of use strict
 
 
-
-
-
 $('.owl-carousel').owlCarousel({
   center: true,
   nav: false,
